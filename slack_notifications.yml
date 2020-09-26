@@ -1,0 +1,10 @@
+name: Slack notification reminders
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  remind:
+    name: Remind reviewer to update Rally
+    runs-on: ubuntu-latest
